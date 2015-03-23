@@ -5,7 +5,7 @@
 ## Login   <ol@epitech.net>
 ##
 ## Started on  Tue Oct  5 15:56:43 2004 Olivier Crouzet
-## Last update Mon Mar 23 14:34:04 2015 Ambroise Coutarel
+## Last update Mon Mar 23 14:43:30 2015 Ambroise Coutarel
 ##
 
 
@@ -31,6 +31,7 @@ CFLAGS	=-I/usr/X11R6/include -O3 -fPIC
 
 $(NAME): $(OBJ)
 	 $(CC) -shared -o $(NAME) $(OBJ)
+	 cp $(NAME) ..
 
 
 clean	:

@@ -5,7 +5,7 @@
 ## Login   <durand_u@epitech.net>
 ## 
 ## Started on  Mon Mar 23 10:46:23 2015 Rémi DURAND
-## Last update Mon Mar 23 14:37:16 2015 Ambroise Coutarel
+## Last update Mon Mar 23 14:44:03 2015 Ambroise Coutarel
 ##
 
 SRC		=	nibbler.cpp	\
@@ -20,6 +20,8 @@ OBJ		=	$(SRC:.cpp=.o)
 NAME		=	nibbler
 
 MLX		=	./minilibx/
+
+MLX_LIB		=	lib_nibbler_mlx.so
 
 CXXFLAGS	+=	-W -Wall -Wextra -Werror -ldl
 
@@ -37,5 +39,6 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
+	$(RM) $(MLX_LIB)
 
 re: fclean all
