@@ -5,15 +5,15 @@
 ## Login   <ol@epitech.net>
 ##
 ## Started on  Tue Oct  5 15:56:43 2004 Olivier Crouzet
-## Last update Mon Mar 23 12:30:15 2015 Ambroise Coutarel
+## Last update Mon Mar 23 14:34:04 2015 Ambroise Coutarel
 ##
 
 
 CC	= gcc
 
-NAME	= libmlx.a
+## NAME	= libmlx.a
 
-NIB	= lib_nibbler_mlx.so
+NAME	= lib_nibbler_mlx.so
 
 SRC	= mlx_init.c mlx_new_window.c mlx_pixel_put.c mlx_loop.c \
 	mlx_mouse_hook.c mlx_key_hook.c mlx_expose_hook.c mlx_loop_hook.c \
@@ -29,13 +29,8 @@ SRC	= mlx_init.c mlx_new_window.c mlx_pixel_put.c mlx_loop.c \
 OBJ	=$(SRC:.c=.o)
 CFLAGS	=-I/usr/X11R6/include -O3 -fPIC
 
-nibbler: $(OBJ)
-	 $(CC) -shared -o $(NIB) $(OBJ)
-
-$(NAME)	: $(OBJ)
-	ar -r $(NAME) $(OBJ)
-	ranlib $(NAME)
-	cp $(NAME) libmlx_$(HOSTTYPE).a
+$(NAME): $(OBJ)
+	 $(CC) -shared -o $(NAME) $(OBJ)
 
 
 clean	:
