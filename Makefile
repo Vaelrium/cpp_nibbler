@@ -5,10 +5,11 @@
 ## Login   <durand_u@epitech.net>
 ## 
 ## Started on  Mon Mar 23 10:46:23 2015 Rémi DURAND
-## Last update Mon Mar 23 10:47:46 2015 Rémi DURAND
+## Last update Mon Mar 23 11:21:55 2015 Rémi DURAND
 ##
 
-SRC		=	nibbler.cpp
+SRC		=	nibbler.cpp	\
+			init.cpp
 
 CC		=	g++
 
