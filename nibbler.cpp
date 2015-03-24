@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 10:40:33 2015 Rémi DURAND
-// Last update Mon Mar 23 15:19:57 2015 Rémi DURAND
+// Last update Tue Mar 24 13:23:53 2015 Rémi DURAND
 //
 
 #include "nibbler.hpp"
