@@ -1,11 +1,11 @@
 ##
-## Makefile for MiniLibX in /home/boulon/work/c/raytraceur/minilibx
+## Makefile for MiniLibX in /home/JEFF/
 ##
-## Made by Olivier Crouzet
-## Login   <ol@epitech.net>
+## Made by Jeff Lavariable
+## Login   <jeff@epitech.net>
 ##
-## Started on  Tue Oct  5 15:56:43 2004 Olivier Crouzet
-## Last update Tue Mar 24 12:43:16 2015 Rémi DURAND
+## Started on  Tue Oct  5 15:56:43 2228 Jeff Lavariable
+## Last update Tue Mar 24 12:54:58 2015 Ambroise Coutarel
 ##
 
 
@@ -35,7 +35,7 @@ OBJ_CPP = $(TEST:.cpp=.o)
 
 CFLAGS	= -I/usr/X11R6/include -O3 -fPIC
 
-CXXFLAGS= -I/usr/X11R6/include -O3 -fPIC
+CXXFLAGS= -I/usr/X11R6/include -O3 -fPIC -Wno-write-strings
 
 $(NAME):         $(OBJ) $(OBJ_CPP)
 	 	$(CC) -rdynamic -shared -o $(NAME) $(OBJ) $(OBJ_CPP) -lX11 -lXext

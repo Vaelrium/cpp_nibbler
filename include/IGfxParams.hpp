@@ -5,7 +5,7 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:11:45 2015 Ambroise Coutarel
-// Last update Tue Mar 24 10:28:31 2015 Ambroise Coutarel
+// Last update Tue Mar 24 13:12:45 2015 Ambroise Coutarel
 //
 
 #ifndef IGFXPARAMS_H_
@@ -14,7 +14,7 @@
 
 class	IGfxParams
 {
-private:
+protected:
   int	win_x;
   int	win_y;
   int	bpp;

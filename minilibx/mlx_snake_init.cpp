@@ -5,7 +5,7 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:35:36 2015 Ambroise Coutarel
-// Last update Tue Mar 24 12:37:26 2015 Rémi DURAND
+// Last update Tue Mar 24 13:05:41 2015 Ambroise Coutarel
 //
 
 #include "mlx.h"
@@ -15,8 +15,8 @@ extern "C"
 {
   IGfxParams	*init_lib(int win_x, int win_y)
   {
-    MlxGfxParams	*jeff= new MlxGfxParams(win_x, win_y);
+    //MlxGfxParams	*jeff= new MlxGfxParams(win_x, win_y);
 
-    return (jeff);
+    return (new MlxGfxParams(win_x, win_y));
   }
 }

@@ -5,7 +5,7 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:21:12 2015 Ambroise Coutarel
-// Last update Tue Mar 24 11:09:21 2015 Ambroise Coutarel
+// Last update Tue Mar 24 12:57:14 2015 Ambroise Coutarel
 //
 
 #ifndef MLXGFXPARAMS_H_
@@ -14,22 +14,24 @@
 
 # include "../include/IGfxParams.hpp"
 
-class MlxGfxParams : public IGfxParams
+extern "C"
 {
-private:
-  void	*mlx_ptr;
-  void	*win_ptr;
-  void	*img_ptr;
+  class MlxGfxParams : public IGfxParams
+  {
+  private:
+    void	*mlx_ptr;
+    void	*win_ptr;
+    void	*img_ptr;
 
-public:
-  char	*img;
-  MlxGfxParams(int win_x, int win_y);
-  ~MlxGfxParams();
-  int	getWin_x() const;
-  int	getWin_y() const;
-  int	getBpp() const;
-  int	getSizeline() const;
-  int	getEndian() const;
-};
-
+  public:
+    char	*img;
+    MlxGfxParams(int win_x, int win_y);
+    ~MlxGfxParams();
+    int	getWin_x() const;
+    int	getWin_y() const;
+    int	getBpp() const;
+    int	getSizeline() const;
+    int	getEndian() const;
+  };
+}
 #endif

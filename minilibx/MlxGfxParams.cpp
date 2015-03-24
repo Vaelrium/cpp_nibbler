@@ -5,10 +5,13 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:40:15 2015 Ambroise Coutarel
-// Last update Mon Mar 23 15:52:15 2015 Ambroise Coutarel
+// Last update Tue Mar 24 13:13:30 2015 Ambroise Coutarel
 //
 
+extern "C"
+{
 #include "mlx.h"
+}
 #include "MlxGfxParams.hpp"
 
 MlxGfxParams::MlxGfxParams(int win_x, int win_y)
@@ -26,27 +29,28 @@ MlxGfxParams::~MlxGfxParams()
 {
 }
 
-int	getWin_x() const
+int	MlxGfxParams::getWin_x() const
 {
   return (win_x);
 }
 
-int	getWin_y() const
+int	MlxGfxParams::getWin_y() const
 {
   return (win_y);
 }
 
-int	getBpp() const
+int	MlxGfxParams::getBpp() const
 {
-  return (bbp);
+  return (bpp);
 }
 
-int	getSizeline() const
+int	MlxGfxParams::getSizeline() const
 {
   return (sizeline);
 }
 
-int	getEndian() const
+int	MlxGfxParams::getEndian() const
 {
   return (endian);
 }
+
