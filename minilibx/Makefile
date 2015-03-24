@@ -5,7 +5,7 @@
 ## Login   <ol@epitech.net>
 ##
 ## Started on  Tue Oct  5 15:56:43 2004 Olivier Crouzet
-## Last update Tue Mar 24 11:34:39 2015 Ambroise Coutarel
+## Last update Tue Mar 24 12:25:12 2015 Ambroise Coutarel
 ##
 
 
@@ -33,7 +33,7 @@ OBJ	= $(SRC:.c=.o)
 
 OBJ_CPP = $(TEST:.cpp=.o)
 
-CFLAGS	= -I/usr/X11R6/include -O3 -fPIC -lX11 -lXext
+CFLAGS	= -I/usr/X11R6/include -O3 -fPIC
 
 CXXFLAGS= -I/usr/X11R6/include -O3 -fPIC
 
@@ -41,7 +41,7 @@ CXXFLAGS= -I/usr/X11R6/include -O3 -fPIC
 # 	 $(CC) -shared -o libfuckeverything.so $(OBJ) $(OBJ_CPP)
 
 $(NAME):        $(OBJ)
-	 	$(CC) -shared -o $(NAME) $(OBJ)
+	 	$(CC) -shared -o $(NAME) $(OBJ) -lX11 -lXext
 	 	cp $(NAME) ..
 
 
