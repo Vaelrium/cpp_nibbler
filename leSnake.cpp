@@ -5,10 +5,11 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Tue Mar 24 13:56:25 2015 Rémi DURAND
-// Last update Tue Mar 24 14:19:19 2015 Rémi DURAND
+// Last update Tue Mar 24 15:19:06 2015 Rémi DURAND
 //
 
 #include "./include/leSnake.hpp"
+#include <cstdlib>
 
 leSnake::leSnake(int width, int height)
 {
@@ -20,6 +21,7 @@ leSnake::leSnake(int width, int height)
   this->body.push_back(std::make_pair((width / 2) - 1, height / 2));
   this->body.push_back(std::make_pair((width / 2) - 2, height / 2));
   this->body.push_back(std::make_pair((width / 2) - 3, height / 2));
+  this->newFood(width, height);
 }
 
 leSnake::leSnake(const leSnake& other)
@@ -98,4 +100,23 @@ void		leSnake::setDir(int par)
 void		leSnake::setDead(bool par)
 {
   this->dead = par;
+}
+
+void		leSnake::newFood(int width, int height)
+{
+  this->leFood = std::make_pair((rand() / width), (rand() / height));
+}
+
+void		leSnake::move()
+{
+  this->body.insert(this->body.begin(), std::make_pair(this->hx, this->hy));
+  this->body.pop_back();
+  if (this->dir == 0)
+    this->hx++;
+  else if (this->dir == 1)
+    this->hy++;
+  else if (this->dir == 2)
+    this->hx--;
+  else
+    this->hy--;
 }

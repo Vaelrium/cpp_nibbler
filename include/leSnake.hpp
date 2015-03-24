@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Tue Mar 24 13:56:44 2015 Rémi DURAND
-// Last update Tue Mar 24 14:17:48 2015 Rémi DURAND
+// Last update Tue Mar 24 15:03:35 2015 Rémi DURAND
 //
 
 #ifndef _LES_H_
@@ -23,6 +23,7 @@ private:
   int		dir;
   bool		dead;
 public:
+  std::pair<int, int>			leFood;
   std::vector<std::pair<int, int> >	body;
   leSnake(int, int);
   leSnake(const leSnake&);
@@ -38,6 +39,8 @@ public:
   void		setHy(int);
   void		setDir(int);
   void		setDead(bool);
+  void		newFood(int, int);
+  void		move();
 };
 
 #endif

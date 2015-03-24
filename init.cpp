@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 11:16:54 2015 Rémi DURAND
-// Last update Tue Mar 24 11:29:59 2015 Ambroise Coutarel
+// Last update Tue Mar 24 14:42:47 2015 Rémi DURAND
 //
 
 #include "nibbler.hpp"
@@ -25,5 +25,6 @@ int		init_nib(const int width, const int height,
       std::cout << dlerror() << std::endl;
       return (-1);
     }
+  srand(time(0));
   return (0);
 }

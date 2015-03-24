@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 10:41:04 2015 Rémi DURAND
-// Last update Tue Mar 24 13:57:06 2015 Rémi DURAND
+// Last update Tue Mar 24 15:26:14 2015 Rémi DURAND
 //
 
 #ifndef _NIB_H_
