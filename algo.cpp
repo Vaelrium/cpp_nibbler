@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 14:55:17 2015 Rémi DURAND
-// Last update Tue Mar 24 11:22:28 2015 Ambroise Coutarel
+// Last update Tue Mar 24 12:38:24 2015 Rémi DURAND
 //
 
 #include "nibbler.hpp"
@@ -14,11 +14,11 @@
 int		algo_snake(const int width, const int height, void *handler)
 {
   IGfxParams	*displayHandler;
-  IGfxParams	*(*butts)();
+  IGfxParams	*(*butts)(int, int);
 
   (void)width;
   (void)height;
-  butts = reinterpret_cast<IGfxParams* (*)()>(dlsym(handler, "mlx_init"));
+  butts = reinterpret_cast<IGfxParams* (*)(int, int)>(dlsym(handler, "init_lib"));
   if (butts == NULL)
     {
       std::cout << "Yo rrémi" << std::endl;
@@ -26,8 +26,6 @@ int		algo_snake(const int width, const int height, void *handler)
       return (-1);
     }
   (void)displayHandler;
-  displayHandler = butts();
-  // jeff = the_creator();
-  // jeff->print_name();
+  displayHandler = butts(width, height);
   return (0);
 }

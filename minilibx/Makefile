@@ -5,7 +5,7 @@
 ## Login   <ol@epitech.net>
 ##
 ## Started on  Tue Oct  5 15:56:43 2004 Olivier Crouzet
-## Last update Tue Mar 24 12:32:44 2015 Ambroise Coutarel
+## Last update Tue Mar 24 12:43:16 2015 Rémi DURAND
 ##
 
 
@@ -15,7 +15,8 @@ CC	= gcc
 
 NAME	= lib_nibbler_mlx.so
 
-TEST	= mlx_snake_init.cpp
+TEST	=	mlx_snake_init.cpp	\
+		MlxGfxParams.cpp
 
 SRC	= mlx_init.c mlx_new_window.c mlx_pixel_put.c mlx_loop.c \
 	mlx_mouse_hook.c mlx_key_hook.c mlx_expose_hook.c mlx_loop_hook.c \
@@ -27,7 +28,6 @@ SRC	= mlx_init.c mlx_new_window.c mlx_pixel_put.c mlx_loop.c \
 	mlx_xpm.c mlx_int_str_to_wordtab.c mlx_destroy_window.c \
 	mlx_int_param_event.c mlx_int_set_win_event_mask.c mlx_hook.c \
 	mlx_rgb.c	\
-#	testeur.c
 
 OBJ	= $(SRC:.c=.o)
 
@@ -36,14 +36,6 @@ OBJ_CPP = $(TEST:.cpp=.o)
 CFLAGS	= -I/usr/X11R6/include -O3 -fPIC
 
 CXXFLAGS= -I/usr/X11R6/include -O3 -fPIC
-
-# test:	 $(OBJ) $(OBJ_CPP)
-# 	 $(CC) -shared -o libfuckeverything.so $(OBJ) $(OBJ_CPP)
-
-# $(NAME):        $(OBJ)
-# 	 	$(CC) -shared -o $(NAME) $(OBJ) -lX11 -lXext
-# 	 	cp $(NAME) ..
-
 
 $(NAME):         $(OBJ) $(OBJ_CPP)
 	 	$(CC) -rdynamic -shared -o $(NAME) $(OBJ) $(OBJ_CPP) -lX11 -lXext

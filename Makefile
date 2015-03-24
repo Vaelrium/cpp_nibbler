@@ -5,7 +5,7 @@
 ## Login   <durand_u@epitech.net>
 ## 
 ## Started on  Mon Mar 23 10:46:23 2015 Rémi DURAND
-## Last update Mon Mar 23 14:55:37 2015 Rémi DURAND
+## Last update Tue Mar 24 10:39:28 2015 Rémi DURAND
 ##
 
 SRC		=	nibbler.cpp	\
