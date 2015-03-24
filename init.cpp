@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 11:16:54 2015 Rémi DURAND
-// Last update Mon Mar 23 15:00:21 2015 Rémi DURAND
+// Last update Tue Mar 24 11:29:59 2015 Ambroise Coutarel
 //
 
 #include "nibbler.hpp"
@@ -19,7 +19,7 @@ int		init_nib(const int width, const int height,
       return (-1);
     }
   lib = "./" + lib;
-  *handler = dlopen(lib.c_str(), RTLD_LAZY);
+  *handler = dlopen(lib.c_str(), RTLD_LAZY | RTLD_GLOBAL);
   if (*handler == NULL)
     {
       std::cout << dlerror() << std::endl;

@@ -5,7 +5,7 @@
 ** Login   <ol@epitech.net>
 ** 
 ** Started on  Mon Jul 31 16:45:48 2000 Charlie Root
-** Last update Wed May 25 16:44:16 2011 Olivier Crouzet
+** Last update Tue Mar 24 11:33:05 2015 Ambroise Coutarel
 */
 
 
@@ -26,6 +26,7 @@
 #include	<sys/ipc.h>
 #include	<sys/shm.h>
 #include	<X11/extensions/XShm.h>
+#include	<X11/Xlib.h>
 /* #include	<X11/xpm.h> */
 
 

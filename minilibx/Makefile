@@ -5,7 +5,7 @@
 ## Login   <ol@epitech.net>
 ##
 ## Started on  Tue Oct  5 15:56:43 2004 Olivier Crouzet
-## Last update Mon Mar 23 15:26:51 2015 Rémi DURAND
+## Last update Tue Mar 24 11:34:39 2015 Ambroise Coutarel
 ##
 
 
@@ -14,6 +14,8 @@ CC	= gcc
 ## NAME	= libmlx.a
 
 NAME	= lib_nibbler_mlx.so
+
+TEST	= mlx_snake_init.cpp
 
 SRC	= mlx_init.c mlx_new_window.c mlx_pixel_put.c mlx_loop.c \
 	mlx_mouse_hook.c mlx_key_hook.c mlx_expose_hook.c mlx_loop_hook.c \
@@ -27,13 +29,28 @@ SRC	= mlx_init.c mlx_new_window.c mlx_pixel_put.c mlx_loop.c \
 	mlx_rgb.c	\
 #	testeur.c
 
-OBJ	=$(SRC:.c=.o)
-CFLAGS	=-I/usr/X11R6/include -O3 -fPIC
+OBJ	= $(SRC:.c=.o)
 
-$(NAME): $(OBJ)
-	 $(CC) -shared -o $(NAME) $(OBJ)
-	 cp $(NAME) ..
+OBJ_CPP = $(TEST:.cpp=.o)
+
+CFLAGS	= -I/usr/X11R6/include -O3 -fPIC -lX11 -lXext
+
+CXXFLAGS= -I/usr/X11R6/include -O3 -fPIC
+
+# test:	 $(OBJ) $(OBJ_CPP)
+# 	 $(CC) -shared -o libfuckeverything.so $(OBJ) $(OBJ_CPP)
+
+$(NAME):        $(OBJ)
+	 	$(CC) -shared -o $(NAME) $(OBJ)
+	 	cp $(NAME) ..
+
+
+# $(NAME):         $(OBJ) $(OBJ_CPP)
+# 	 	$(CC) -rdynamic -shared -o $(NAME) $(OBJ) $(OBJ_CPP)
+# 	 	cp $(NAME) ..
 
 
 clean	:
-	rm -f $(OBJ) $(NAME) *~ core *.core
+	rm -f $(OBJ) $(OBJ_CPP) $(NAME) *~ core *.core
+
+re: clean $(NAME)

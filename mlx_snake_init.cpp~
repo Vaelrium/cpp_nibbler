@@ -1,0 +1,22 @@
+//
+// mlx_init.cpp for nibbler in /home/ganesha/projets/cpp_nibbler
+//
+// Made by Ambroise Coutarel
+// Login   <ganesha@epitech.net>
+//
+// Started on  Mon Mar 23 15:35:36 2015 Ambroise Coutarel
+// Last update Tue Mar 24 09:46:21 2015 Ambroise Coutarel
+//
+
+extern "C"
+{
+#include "mlx.h"
+}
+#include "MlxGfxParams.hpp"
+
+IGfxParams	*init_lib(int win_x, int win_y)
+{
+  MlxGfxParams	*jeff= new MlxGfxParams(win_x, win_y);
+
+  return (jeff);
+}

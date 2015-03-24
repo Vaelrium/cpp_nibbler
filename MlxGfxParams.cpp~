@@ -1,0 +1,14 @@
+//
+// MlxGfxParams.cpp for nibbler in /home/ganesha/projets/cpp_nibbler
+//
+// Made by Ambroise Coutarel
+// Login   <ganesha@epitech.net>
+//
+// Started on  Mon Mar 23 15:40:15 2015 Ambroise Coutarel
+// Last update Mon Mar 23 15:41:27 2015 Ambroise Coutarel
+//
+
+#include "mlx.h"
+#include "MlxGfxParams.hpp"
+
+MlxGfxParams::MlxGfxParams
