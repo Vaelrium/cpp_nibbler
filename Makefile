@@ -5,12 +5,13 @@
 ## Login   <durand_u@epitech.net>
 ## 
 ## Started on  Mon Mar 23 10:46:23 2015 Rémi DURAND
-## Last update Tue Mar 24 10:39:28 2015 Rémi DURAND
+## Last update Tue Mar 24 13:58:23 2015 Rémi DURAND
 ##
 
 SRC		=	nibbler.cpp	\
 			init.cpp	\
-			algo.cpp
+			algo.cpp	\
+			leSnake.cpp
 
 CC		=	g++
 

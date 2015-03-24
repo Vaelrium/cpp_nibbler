@@ -1,0 +1,41 @@
+//
+// leSnake.hpp for header in /home/durand_u/github/cpp_nibbler
+// 
+// Made by Rémi DURAND
+// Login   <durand_u@epitech.net>
+// 
+// Started on  Tue Mar 24 13:56:44 2015 Rémi DURAND
+// Last update Tue Mar 24 13:57:15 2015 Rémi DURAND
+//
+
+#include <utility>
+#include <vector>
+
+class		leSnake
+{
+private:
+  int		size;
+  int		hx;
+  int		hy;
+  int		dir;
+  bool		dead;
+public:
+  std::vector<std::pair<int, int> >	body;
+  leSnake();
+  leSnake(const leSnake&);
+  ~leSnake();
+  leSnake&	operator=(const leSnake&);
+  int		getSize() const;
+  int		getHx() const;
+  int		getHz() const;
+  int		getDir() const;
+  bool		getDead() const;
+  void		setSize();
+  void		setHx();
+  void		setHz();
+  void		setDir();
+  void		setDead();
+};
+
+//      limits.push_back(std::make_pair(CHAR_MIN, CHAR_MAX));
+
