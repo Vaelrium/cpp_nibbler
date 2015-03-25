@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Tue Mar 24 13:56:44 2015 Rémi DURAND
-// Last update Tue Mar 24 15:03:35 2015 Rémi DURAND
+// Last update Wed Mar 25 11:26:49 2015 Rémi DURAND
 //
 
 #ifndef _LES_H_
@@ -39,8 +39,10 @@ public:
   void		setHy(int);
   void		setDir(int);
   void		setDead(bool);
+
   void		newFood(int, int);
-  void		move();
+  void		move(int, int);
+  void		foodCheck(int, int);
 };
 
 #endif

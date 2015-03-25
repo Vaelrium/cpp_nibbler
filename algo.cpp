@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 14:55:17 2015 Rémi DURAND
-// Last update Tue Mar 24 15:30:00 2015 Rémi DURAND
+// Last update Wed Mar 25 11:41:28 2015 Rémi DURAND
 //
 
 #include <unistd.h>
@@ -13,13 +13,14 @@
 #include "nibbler.hpp"
 #include "./include/IGfxParams.hpp"
 
-int		game_begin(const int width, const int height, void *handler)
+int		game_launch(const int width, const int height, void *handler)
 {
   leSnake	snake(width, height);
 
   while (snake.getDead() == false)
     {
-      snake.move();
+      snake.move(width, height);
+      snake.foodCheck(width, height);
       //affichage
       usleep(500000);
     }
@@ -40,5 +41,6 @@ int		algo_snake(const int width, const int height, void *handler)
     }
   displayHandler = genitor3000(width, height);
   (void)displayHandler;
+  game_launch(width, height, handler);
   return (0);
 }
