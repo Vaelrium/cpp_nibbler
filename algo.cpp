@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 14:55:17 2015 Rémi DURAND
-// Last update Wed Mar 25 11:41:28 2015 Rémi DURAND
+// Last update Wed Mar 25 13:08:31 2015 Rémi DURAND
 //
 
 #include <unistd.h>
@@ -19,7 +19,8 @@ int		game_launch(const int width, const int height, void *handler)
 
   while (snake.getDead() == false)
     {
-      snake.move(width, height);
+      snake.move();
+      snake.deadCheck(width, height);
       snake.foodCheck(width, height);
       //affichage
       usleep(500000);
@@ -39,7 +40,7 @@ int		algo_snake(const int width, const int height, void *handler)
       std::cout << dlerror() << std::endl;
       return (-1);
     }
-  displayHandler = genitor3000(width, height);
+  displayHandler = genitor3000(width * BLOCK_SIZE, height * BLOCK_SIZE);
   (void)displayHandler;
   game_launch(width, height, handler);
   return (0);

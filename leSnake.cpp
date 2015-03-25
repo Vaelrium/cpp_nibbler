@@ -5,11 +5,12 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Tue Mar 24 13:56:25 2015 Rémi DURAND
-// Last update Wed Mar 25 11:38:27 2015 Rémi DURAND
+// Last update Wed Mar 25 13:11:57 2015 Rémi DURAND
 //
 
 #include "./include/leSnake.hpp"
 #include <cstdlib>
+#include <iostream>
 
 leSnake::leSnake(int width, int height)
 {
@@ -109,7 +110,27 @@ void		leSnake::newFood(int width, int height)
   this->leFood = std::make_pair((rand() % width), (rand() % height));
 }
 
-void		leSnake::move(int width, int height)
+void		leSnake::deadCheck(int width, int height)
+{
+  std::vector<std::pair<int, int> >::iterator	it;
+
+  if (this->hx == width || this->hy == height)
+    {
+      this->dead = true;
+      return ;
+    }
+  for (it = this->body.begin(); it != this->body.end(); it++)
+    {
+      if (this->hx == it->first && this->hy == it->second)
+	{
+	  std::cout << "Lol" << std::endl;
+	  this->dead = true;
+	  return ;
+	}
+    }
+}
+
+void		leSnake::move()
 {
   this->body.insert(this->body.begin(), std::make_pair(this->hx, this->hy));
   this->body.pop_back();
@@ -121,11 +142,9 @@ void		leSnake::move(int width, int height)
     this->hx--;
   else
     this->hy--;
-  if (this->hx == width || this->hy == height)
-    this->dead = true;
 }
 
-void			leSnake::foodCheck(int width, int height)
+void		leSnake::foodCheck(int width, int height)
 {
   std::vector<std::pair<int, int> >::iterator	end;
 
