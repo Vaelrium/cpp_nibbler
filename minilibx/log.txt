@@ -1,0 +1,1162 @@
+mlx_new_image.c: In function ‘shm_att_pb’:
+mlx_new_image.c:27:5: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+     write(2,WARN_SHM_ATTACH,strlen(WARN_SHM_ATTACH));
+     ^
+In file included from /usr/include/c++/4.9/utility:69:0,
+                 from ../include/leSnake.hpp:14,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_relops.h:85:5: error: template with C linkage
+     template <class _Tp>
+     ^
+/usr/include/c++/4.9/bits/stl_relops.h:98:5: error: template with C linkage
+     template <class _Tp>
+     ^
+/usr/include/c++/4.9/bits/stl_relops.h:111:5: error: template with C linkage
+     template <class _Tp>
+     ^
+/usr/include/c++/4.9/bits/stl_relops.h:124:5: error: template with C linkage
+     template <class _Tp>
+     ^
+In file included from /usr/include/c++/4.9/bits/stl_pair.h:59:0,
+                 from /usr/include/c++/4.9/utility:70,
+                 from ../include/leSnake.hpp:14,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/move.h:45:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/move.h:164:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/move.h:183:3: error: template with C linkage
+   template<typename _Tp, size_t _Nm>
+   ^
+In file included from /usr/include/c++/4.9/utility:70:0,
+                 from ../include/leSnake.hpp:14,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_pair.h:95:3: error: template with C linkage
+   template<class _T1, class _T2>
+   ^
+/usr/include/c++/4.9/bits/stl_pair.h:212:3: error: template with C linkage
+   template<class _T1, class _T2>
+   ^
+/usr/include/c++/4.9/bits/stl_pair.h:218:3: error: template with C linkage
+   template<class _T1, class _T2>
+   ^
+/usr/include/c++/4.9/bits/stl_pair.h:225:3: error: template with C linkage
+   template<class _T1, class _T2>
+   ^
+/usr/include/c++/4.9/bits/stl_pair.h:231:3: error: template with C linkage
+   template<class _T1, class _T2>
+   ^
+/usr/include/c++/4.9/bits/stl_pair.h:237:3: error: template with C linkage
+   template<class _T1, class _T2>
+   ^
+/usr/include/c++/4.9/bits/stl_pair.h:243:3: error: template with C linkage
+   template<class _T1, class _T2>
+   ^
+/usr/include/c++/4.9/bits/stl_pair.h:284:3: error: template with C linkage
+   template<class _T1, class _T2>
+   ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:61:0,
+                 from /usr/include/c++/4.9/vector:60,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/cpp_type_traits.h:72:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:85:3: error: template with C linkage
+   template<bool>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:89:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:95:3: error: template with C linkage
+   template<class _Sp, class _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:103:3: error: template with C linkage
+   template<typename, typename>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:110:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:118:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:125:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:135:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:145:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:152:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:159:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:166:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:174:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:198:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:205:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:212:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:219:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:226:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:233:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:240:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:247:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:257:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:265:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:272:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:279:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:289:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:296:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:306:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:313:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:324:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:332:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:340:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:347:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:355:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:363:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:370:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:377:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:384:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/cpp_type_traits.h:394:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:62:0,
+                 from /usr/include/c++/4.9/vector:60,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/ext/type_traits.h:42:3: error: template with C linkage
+   template<bool, typename>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:46:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:52:3: error: template with C linkage
+   template<bool _Cond, typename _Iftrue, typename _Iffalse>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:56:3: error: template with C linkage
+   template<typename _Iftrue, typename _Iffalse>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:62:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:72:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:76:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:80:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:84:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:88:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:92:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:97:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:100:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:105:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:115:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:119:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:123:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:127:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:131:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:135:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:140:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:143:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:148:3: error: template with C linkage
+   template<typename _Type>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:153:3: error: template with C linkage
+   template<typename _Type>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:165:3: error: template with C linkage
+   template<typename _Tp, bool = std::__is_integer<_Tp>::__value>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:172:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:176:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:180:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:184:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:188:3: error: template with C linkage
+   template<typename _Tp, typename _Up,
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:196:3: error: template with C linkage
+   template<typename _Tp, typename _Up, typename _Vp,
+   ^
+/usr/include/c++/4.9/ext/type_traits.h:205:3: error: template with C linkage
+   template<typename _Tp, typename _Up, typename _Vp, typename _Wp,
+   ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:63:0,
+                 from /usr/include/c++/4.9/vector:60,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/ext/numeric_traits.h:54:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:67:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:70:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:73:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:76:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:99:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:111:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:114:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:117:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:120:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/ext/numeric_traits.h:123:3: error: template with C linkage
+   template<typename _Value>
+   ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/4.9/vector:60,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_iterator_base_types.h:116:3: error: template with C linkage
+   template<typename _Category, typename _Tp, typename _Distance = ptrdiff_t,
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_types.h:162:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_types.h:174:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_types.h:185:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_types.h:199:3: error: template with C linkage
+   template<typename _Iter>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_types.h:208:3: error: template with C linkage
+   template<typename _Iterator, bool _HasBase>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_types.h:216:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/4.9/vector:60,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_iterator_base_funcs.h:71:3: error: template with C linkage
+   template<typename _InputIterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_funcs.h:88:3: error: template with C linkage
+   template<typename _RandomAccessIterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_funcs.h:112:3: error: template with C linkage
+   template<typename _InputIterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_funcs.h:121:3: error: template with C linkage
+   template<typename _InputIterator, typename _Distance>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_funcs.h:132:3: error: template with C linkage
+   template<typename _BidirectionalIterator, typename _Distance>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_funcs.h:148:3: error: template with C linkage
+   template<typename _RandomAccessIterator, typename _Distance>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator_base_funcs.h:171:3: error: template with C linkage
+   template<typename _InputIterator, typename _Distance>
+   ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9/vector:60,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_iterator.h:96:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:290:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:296:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:302:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:308:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:314:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:320:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:326:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:332:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:340:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:346:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:352:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:358:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:364:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:370:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:376:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:402:3: error: template with C linkage
+   template<typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:478:3: error: template with C linkage
+   template<typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:493:3: error: template with C linkage
+   template<typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:568:3: error: template with C linkage
+   template<typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:587:3: error: template with C linkage
+   template<typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:682:3: error: template with C linkage
+   template<typename _Container, typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:708:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:806:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:813:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:820:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:827:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:835:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:842:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:849:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:856:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:863:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:870:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:877:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:884:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:895:3: error: template with C linkage
+   template<typename _IteratorL, typename _IteratorR, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:909:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+/usr/include/c++/4.9/bits/stl_iterator.h:916:3: error: template with C linkage
+   template<typename _Iterator, typename _Container>
+   ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9/vector:60,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/predefined_ops.h:39:5: error: template with C linkage
+     template<typename _Iterator1, typename _Iterator2>
+     ^
+/usr/include/c++/4.9/bits/predefined_ops.h:51:5: error: template with C linkage
+     template<typename _Iterator, typename _Value>
+     ^
+/usr/include/c++/4.9/bits/predefined_ops.h:67:5: error: template with C linkage
+     template<typename _Value, typename _Iterator>
+     ^
+/usr/include/c++/4.9/bits/predefined_ops.h:83:5: error: template with C linkage
+     template<typename _Iterator1, typename _Iterator2>
+     ^
+/usr/include/c++/4.9/bits/predefined_ops.h:95:5: error: template with C linkage
+     template<typename _Iterator, typename _Value>
+     ^
+/usr/include/c++/4.9/bits/predefined_ops.h: In function ‘__gnu_cxx::__ops::_Iter_equal_to_val __gnu_cxx::__ops::__iter_comp_val(__gnu_cxx::__ops::_Iter_equal_to_iter)’:
+/usr/include/c++/4.9/bits/predefined_ops.h:106:38: error: conflicting declaration of C function ‘__gnu_cxx::__ops::_Iter_equal_to_val __gnu_cxx::__ops::__iter_comp_val(__gnu_cxx::__ops::_Iter_equal_to_iter)’
+   __iter_comp_val(_Iter_equal_to_iter)
+                                      ^
+/usr/include/c++/4.9/bits/predefined_ops.h:62:3: note: previous declaration ‘__gnu_cxx::__ops::_Iter_less_val __gnu_cxx::__ops::__iter_comp_val(__gnu_cxx::__ops::_Iter_less_iter)’
+   __iter_comp_val(_Iter_less_iter)
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h: At global scope:
+/usr/include/c++/4.9/bits/predefined_ops.h:109:3: error: template with C linkage
+   template<typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:124:3: error: template with C linkage
+   template<typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:129:3: error: template with C linkage
+   template<typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:144:3: error: template with C linkage
+   template<typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:149:3: error: template with C linkage
+   template<typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:154:3: error: template with C linkage
+   template<typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:169:3: error: template with C linkage
+   template<typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:174:3: error: template with C linkage
+   template<typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:179:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:194:3: error: template with C linkage
+   template<typename _Value>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:199:3: error: template with C linkage
+   template<typename _Iterator1>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:214:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:219:3: error: template with C linkage
+   template<typename _Predicate>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:234:3: error: template with C linkage
+   template<typename _Predicate>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:239:3: error: template with C linkage
+   template<typename _Compare, typename _Value>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:255:3: error: template with C linkage
+   template<typename _Compare, typename _Value>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:260:3: error: template with C linkage
+   template<typename _Compare, typename _Iterator1>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:276:3: error: template with C linkage
+   template<typename _Compare, typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:281:3: error: template with C linkage
+   template<typename _Predicate>
+   ^
+/usr/include/c++/4.9/bits/predefined_ops.h:296:3: error: template with C linkage
+   template<typename _Predicate>
+   ^
+In file included from /usr/include/c++/4.9/vector:60:0,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_algobase.h:81:3: error: template with C linkage
+   template<bool _BoolType>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:96:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:118:3: error: template with C linkage
+   template<typename _ForwardIterator1, typename _ForwardIterator2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:164:3: error: template with C linkage
+   template<typename _ForwardIterator1, typename _ForwardIterator2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:192:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:215:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:238:3: error: template with C linkage
+   template<typename _Tp, typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:259:3: error: template with C linkage
+   template<typename _Tp, typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:271:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:276:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:282:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:287:3: error: template with C linkage
+   template<typename _Iterator>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:298:3: error: template with C linkage
+   template<bool, bool, typename>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:326:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:364:3: error: template with C linkage
+   template<bool _IsMove>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:383:3: error: template with C linkage
+   template<bool _IsMove, typename _II, typename _OI>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:401:3: error: template with C linkage
+   template<typename _CharT>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:404:3: error: template with C linkage
+   template<typename _CharT, typename _Traits>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:407:3: error: template with C linkage
+   template<typename _CharT, typename _Traits>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:410:3: error: template with C linkage
+   template<bool _IsMove, typename _CharT>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:416:3: error: template with C linkage
+   template<bool _IsMove, typename _CharT>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:422:3: error: template with C linkage
+   template<bool _IsMove, typename _CharT>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:428:3: error: template with C linkage
+   template<bool _IsMove, typename _II, typename _OI>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:454:3: error: template with C linkage
+   template<typename _II, typename _OI>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:506:3: error: template with C linkage
+   template<bool, bool, typename>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:534:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:564:3: error: template with C linkage
+   template<bool _IsMove>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:583:3: error: template with C linkage
+   template<bool _IsMove, typename _BI1, typename _BI2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:601:3: error: template with C linkage
+   template<bool _IsMove, typename _BI1, typename _BI2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:628:3: error: template with C linkage
+   template<typename _BI1, typename _BI2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:686:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:696:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:708:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:730:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:743:3: error: template with C linkage
+   template<typename _OutputIterator, typename _Size, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:754:3: error: template with C linkage
+   template<typename _OutputIterator, typename _Size, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:766:3: error: template with C linkage
+   template<typename _Size, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:790:3: error: template with C linkage
+   template<typename _OI, typename _Size, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:800:3: error: template with C linkage
+   template<bool _BoolType>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:814:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:826:3: error: template with C linkage
+   template<typename _II1, typename _II2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:841:3: error: template with C linkage
+   template<typename, typename>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:855:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:876:3: error: template with C linkage
+   template<typename _II1, typename _II2, typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:898:3: error: template with C linkage
+   template<bool _BoolType>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:905:3: error: template with C linkage
+   template<bool _BoolType>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:916:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:932:3: error: template with C linkage
+   template<typename _II1, typename _II2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:950:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp, typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:988:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h: In function ‘unsigned int std::__lg(unsigned int)’:
+/usr/include/c++/4.9/bits/stl_algobase.h:1010:20: error: conflicting declaration of C function ‘unsigned int std::__lg(unsigned int)’
+   __lg(unsigned __n)
+                    ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1006:3: note: previous declaration ‘int std::__lg(int)’
+   __lg(int __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h: In function ‘long int std::__lg(long int)’:
+/usr/include/c++/4.9/bits/stl_algobase.h:1014:16: error: conflicting declaration of C function ‘long int std::__lg(long int)’
+   __lg(long __n)
+                ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1010:3: note: previous declaration ‘unsigned int std::__lg(unsigned int)’
+   __lg(unsigned __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1014:16: error: conflicting declaration of C function ‘long int std::__lg(long int)’
+   __lg(long __n)
+                ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1006:3: note: previous declaration ‘int std::__lg(int)’
+   __lg(int __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h: In function ‘long unsigned int std::__lg(long unsigned int)’:
+/usr/include/c++/4.9/bits/stl_algobase.h:1018:25: error: conflicting declaration of C function ‘long unsigned int std::__lg(long unsigned int)’
+   __lg(unsigned long __n)
+                         ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1014:3: note: previous declaration ‘long int std::__lg(long int)’
+   __lg(long __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1018:25: error: conflicting declaration of C function ‘long unsigned int std::__lg(long unsigned int)’
+   __lg(unsigned long __n)
+                         ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1010:3: note: previous declaration ‘unsigned int std::__lg(unsigned int)’
+   __lg(unsigned __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1018:25: error: conflicting declaration of C function ‘long unsigned int std::__lg(long unsigned int)’
+   __lg(unsigned long __n)
+                         ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1006:3: note: previous declaration ‘int std::__lg(int)’
+   __lg(int __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h: In function ‘long long int std::__lg(long long int)’:
+/usr/include/c++/4.9/bits/stl_algobase.h:1022:21: error: conflicting declaration of C function ‘long long int std::__lg(long long int)’
+   __lg(long long __n)
+                     ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1018:3: note: previous declaration ‘long unsigned int std::__lg(long unsigned int)’
+   __lg(unsigned long __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1022:21: error: conflicting declaration of C function ‘long long int std::__lg(long long int)’
+   __lg(long long __n)
+                     ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1014:3: note: previous declaration ‘long int std::__lg(long int)’
+   __lg(long __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1022:21: error: conflicting declaration of C function ‘long long int std::__lg(long long int)’
+   __lg(long long __n)
+                     ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1010:3: note: previous declaration ‘unsigned int std::__lg(unsigned int)’
+   __lg(unsigned __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1022:21: error: conflicting declaration of C function ‘long long int std::__lg(long long int)’
+   __lg(long long __n)
+                     ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1006:3: note: previous declaration ‘int std::__lg(int)’
+   __lg(int __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h: In function ‘long long unsigned int std::__lg(long long unsigned int)’:
+/usr/include/c++/4.9/bits/stl_algobase.h:1026:30: error: conflicting declaration of C function ‘long long unsigned int std::__lg(long long unsigned int)’
+   __lg(unsigned long long __n)
+                              ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1022:3: note: previous declaration ‘long long int std::__lg(long long int)’
+   __lg(long long __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1026:30: error: conflicting declaration of C function ‘long long unsigned int std::__lg(long long unsigned int)’
+   __lg(unsigned long long __n)
+                              ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1018:3: note: previous declaration ‘long unsigned int std::__lg(long unsigned int)’
+   __lg(unsigned long __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1026:30: error: conflicting declaration of C function ‘long long unsigned int std::__lg(long long unsigned int)’
+   __lg(unsigned long long __n)
+                              ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1014:3: note: previous declaration ‘long int std::__lg(long int)’
+   __lg(long __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1026:30: error: conflicting declaration of C function ‘long long unsigned int std::__lg(long long unsigned int)’
+   __lg(unsigned long long __n)
+                              ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1010:3: note: previous declaration ‘unsigned int std::__lg(unsigned int)’
+   __lg(unsigned __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1026:30: error: conflicting declaration of C function ‘long long unsigned int std::__lg(long long unsigned int)’
+   __lg(unsigned long long __n)
+                              ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1006:3: note: previous declaration ‘int std::__lg(int)’
+   __lg(int __n)
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h: At global scope:
+/usr/include/c++/4.9/bits/stl_algobase.h:1045:3: error: template with C linkage
+   template<typename _II1, typename _II2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1077:3: error: template with C linkage
+   template<typename _IIter1, typename _IIter2, typename _BinaryPredicate>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1205:3: error: template with C linkage
+   template<typename _II1, typename _II2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1241:3: error: template with C linkage
+   template<typename _II1, typename _II2, typename _Compare>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1257:3: error: template with C linkage
+   template<typename _InputIterator1, typename _InputIterator2,
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1284:3: error: template with C linkage
+   template<typename _InputIterator1, typename _InputIterator2>
+   ^
+/usr/include/c++/4.9/bits/stl_algobase.h:1317:3: error: template with C linkage
+   template<typename _InputIterator1, typename _InputIterator2,
+   ^
+In file included from /usr/include/x86_64-linux-gnu/c++/4.9/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/4.9/bits/allocator.h:46,
+                 from /usr/include/c++/4.9/vector:61,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/ext/new_allocator.h:57:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/ext/new_allocator.h:137:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/ext/new_allocator.h:142:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+In file included from /usr/include/c++/4.9/bits/allocator.h:47:0,
+                 from /usr/include/c++/4.9/vector:61,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/memoryfwd.h:63:3: error: template with C linkage
+   template<typename>
+   ^
+/usr/include/c++/4.9/bits/memoryfwd.h:66:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/memoryfwd.h:70:3: error: template with C linkage
+   template<typename, typename>
+   ^
+In file included from /usr/include/c++/4.9/vector:61:0,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/allocator.h:62:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:91:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:126:3: error: template with C linkage
+   template<typename _T1, typename _T2>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:131:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:136:3: error: template with C linkage
+   template<typename _T1, typename _T2>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:141:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:159:3: error: template with C linkage
+   template<typename _Alloc, bool = __is_empty(_Alloc)>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:163:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:176:3: error: template with C linkage
+   template<typename _Alloc, bool = __is_empty(_Alloc)>
+   ^
+/usr/include/c++/4.9/bits/allocator.h:184:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+In file included from /usr/include/c++/4.9/bits/stl_construct.h:61:0,
+                 from /usr/include/c++/4.9/vector:62,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/ext/alloc_traits.h:94:1: error: template with C linkage
+ template<typename _Alloc>
+ ^
+In file included from /usr/include/c++/4.9/vector:62:0,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_construct.h:77:3: error: template with C linkage
+   template<typename _T1, typename _T2>
+   ^
+/usr/include/c++/4.9/bits/stl_construct.h:90:3: error: template with C linkage
+   template<typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_construct.h:95:3: error: template with C linkage
+   template<bool>
+   ^
+/usr/include/c++/4.9/bits/stl_construct.h:107:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_construct.h:120:3: error: template with C linkage
+   template<typename _ForwardIterator>
+   ^
+/usr/include/c++/4.9/bits/stl_construct.h:136:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Allocator>
+   ^
+/usr/include/c++/4.9/bits/stl_construct.h:146:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp>
+   ^
+In file included from /usr/include/c++/4.9/vector:63:0,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_uninitialized.h:63:3: error: template with C linkage
+   template<bool _TrivialValueTypes>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:86:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:105:3: error: template with C linkage
+   template<typename _InputIterator, typename _ForwardIterator>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:129:3: error: template with C linkage
+   template<bool _TrivialValueType>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:151:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:170:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:189:3: error: template with C linkage
+   template<bool _TrivialValueType>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:211:3: error: template specialization with C linkage
+   template<>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:230:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Size, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:253:3: error: template with C linkage
+   template<typename _InputIterator, typename _ForwardIterator,
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:274:3: error: template with C linkage
+   template<typename _InputIterator, typename _ForwardIterator, typename _Tp>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:280:3: error: template with C linkage
+   template<typename _InputIterator, typename _ForwardIterator,
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:291:3: error: template with C linkage
+   template<typename _InputIterator, typename _ForwardIterator,
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:304:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp, typename _Allocator>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:323:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp, typename _Tp2>
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:329:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Size, typename _Tp,
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:349:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Size, typename _Tp,
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:366:3: error: template with C linkage
+   template<typename _InputIterator1, typename _InputIterator2,
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:394:3: error: template with C linkage
+   template<typename _InputIterator1, typename _InputIterator2,
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:421:3: error: template with C linkage
+   template<typename _ForwardIterator, typename _Tp, typename _InputIterator,
+   ^
+/usr/include/c++/4.9/bits/stl_uninitialized.h:443:3: error: template with C linkage
+   template<typename _InputIterator, typename _ForwardIterator, typename _Tp,
+   ^
+In file included from /usr/include/c++/4.9/vector:64:0,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_vector.h:71:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/stl_vector.h:213:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc = std::allocator<_Tp> >
+   ^
+/usr/include/c++/4.9/bits/stl_vector.h:1509:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/stl_vector.h:1526:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/stl_vector.h:1533:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/stl_vector.h:1539:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/stl_vector.h:1545:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/stl_vector.h:1551:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/stl_vector.h:1557:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+In file included from /usr/include/c++/4.9/vector:65:0,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/stl_bvector.h: In function ‘std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)’:
+/usr/include/c++/4.9/bits/stl_bvector.h:387:58: error: conflicting declaration of C function ‘std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)’
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+                                                          ^
+/usr/include/c++/4.9/bits/stl_bvector.h:297:3: note: previous declaration ‘std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)’
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+/usr/include/c++/4.9/bits/stl_bvector.h: At global scope:
+/usr/include/c++/4.9/bits/stl_bvector.h:410:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/stl_bvector.h:525:1: error: template with C linkage
+ template<typename _Alloc>
+ ^
+In file included from /usr/include/c++/4.9/vector:69:0,
+                 from ../include/leSnake.hpp:15,
+                 from MlxGfxParams.hpp:16,
+                 from mlx.h:34,
+                 from MlxGfxParams.cpp:13:
+/usr/include/c++/4.9/bits/vector.tcc:63:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:105:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:139:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:151:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:165:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:223:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:245:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:262:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:324:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:447:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:599:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:613:3: error: template with C linkage
+   template<typename _Tp, typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:697:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:710:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:740:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:774:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:801:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+/usr/include/c++/4.9/bits/vector.tcc:812:3: error: template with C linkage
+   template<typename _Alloc>
+   ^
+MlxGfxParams.cpp: In member function ‘int MlxGfxParams::gameLoop()’:
+MlxGfxParams.cpp:79:47: error: invalid conversion from ‘int (*)(int, MlxGfxParams*)’ to ‘int (*)()’ [-fpermissive]
+   mlx_key_hook(this->win_ptr, key_event, snake);
+                                               ^
+In file included from MlxGfxParams.cpp:13:0:
+mlx.h:93:5: note: initializing argument 2 of ‘int mlx_key_hook(void*, int (*)(), void*)’
+ int mlx_key_hook (void *win_ptr, int (*funct_ptr)(), void *param);
+     ^
+MlxGfxParams.cpp:80:53: error: invalid conversion from ‘int (*)(void*, void*, void*)’ to ‘int (*)()’ [-fpermissive]
+   mlx_expose_hook(this->win_ptr, expose_redraw, this);
+                                                     ^
+In file included from MlxGfxParams.cpp:13:0:
+mlx.h:94:5: note: initializing argument 2 of ‘int mlx_expose_hook(void*, int (*)(), void*)’
+ int mlx_expose_hook (void *win_ptr, int (*funct_ptr)(), void *param);
+     ^
+make: *** [MlxGfxParams.o] Error 1

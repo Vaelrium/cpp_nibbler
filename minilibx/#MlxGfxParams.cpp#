@@ -9,14 +9,9 @@
 //
 
 #include "mlx.h"
-
 #include "MlxGfxParams.hpp"
 #include <cstdlib>
 
-extern "C"
-{
-  void	*mlx_init();
-}
 
 MlxGfxParams::MlxGfxParams(int win_x, int win_y, leSnake *snek)
 {

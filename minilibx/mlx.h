@@ -5,7 +5,7 @@
 ** Login   <ol@epitech.net>
 ** 
 ** Started on  Mon Jul 31 16:37:50 2000 Charlie Root
-** Last update Tue May 15 16:23:28 2007 Olivier Crouzet
+** Last update Wed Mar 25 13:42:42 2015 Ambroise Coutarel
 */
 
 /*
@@ -31,7 +31,16 @@
 
 #define	MLX_H
 
+#include "MlxGfxParams.hpp"
 
+# define ESCAPE 65307
+# define RIGHT 65363
+# define LEFT 65361
+# define LEFT_INC(x) (x == 3 ? 0 : (x + 1))
+# define RIGHT_DEC(x) (x == 0 ? 3 : (x - 1))
+
+extern "C"
+{
 void	*mlx_init();
 /*
 **  needed before everything else.
@@ -82,8 +91,8 @@ unsigned int	mlx_get_color_value(void *mlx_ptr, int color);
 */
 
 int	mlx_mouse_hook (void *win_ptr, int (*funct_ptr)(), void *param);
-int	mlx_key_hook (void *win_ptr, int (*funct_ptr)(), void *param);
-int	mlx_expose_hook (void *win_ptr, int (*funct_ptr)(), void *param);
+int	mlx_key_hook (void *win_ptr, int (*funct_ptr)(int, dump*), void *param);
+int	mlx_expose_hook (void *win_ptr, int (*funct_ptr)(dump*), void *param);
 
 int	mlx_loop_hook (void *mlx_ptr, int (*funct_ptr)(), void *param);
 int	mlx_loop (void *mlx_ptr);
@@ -126,4 +135,11 @@ int	mlx_do_key_autorepeatoff(void *mlx_ptr);
 int	mlx_do_key_autorepeaton(void *mlx_ptr);
 int	mlx_do_sync(void *mlx_ptr);
 
+/*
+** Shit I done added for them thar nibblers - coutar_a
+*/
+
+/* int	key_event(int keycode, void *params); */
+/* int	expose_redraw(void *mlx_ptr, void *win_ptr, void *img_ptr); */
+}
 #endif /* MLX_H */
