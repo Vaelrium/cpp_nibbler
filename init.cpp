@@ -5,10 +5,10 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 11:16:54 2015 Rémi DURAND
-// Last update Wed Mar 25 12:50:54 2015 Rémi DURAND
+// Last update Thu Mar 26 10:17:32 2015 Ambroise Coutarel
 //
 
-#include "nibbler.hpp"
+#include "./include/nibbler.hpp"
 
 int		init_nib(const int width, const int height,
 			 std::string lib, void **handler)

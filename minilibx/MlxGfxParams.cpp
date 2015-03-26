@@ -5,13 +5,14 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:40:15 2015 Ambroise Coutarel
-// Last update Wed Mar 25 13:41:50 2015 Ambroise Coutarel
+// Last update Thu Mar 26 10:19:54 2015 Ambroise Coutarel
 //
 
 #include "mlx.h"
-
+#include "../include/nibbler.hpp"
 #include "MlxGfxParams.hpp"
 #include <cstdlib>
+
 
 extern "C"
 {
@@ -76,18 +77,18 @@ int	MlxGfxParams::getEndian() const
 
 int	MlxGfxParams::updateImg(dump *data)
 {
-  // int	x = 0, y = 0;
+  int	x = 0, y = 0, x_game = data->win_x / BLOCK_SIZE, y_game = data->win_y / BLOCK_SIZE;
 
-  // while (y != this->win_y)
-  //   {
-  //     while (x != this->win_x)
-  // 	{
-  // 	  /* check square for snek, fud or nothing*/
-  // 	  ++x;
-  // 	}
-  //     ++y;
-  //     x = 0;
-  //   }
+  while (y != y_game)
+    {
+      while (x != x_game)
+  	{
+  	  /* check square for snek, fud or nothing*/
+  	  ++x;
+  	}
+      ++y;
+      x = 0;
+    }
   return (0);
 }
 

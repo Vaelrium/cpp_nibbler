@@ -5,12 +5,12 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 14:55:17 2015 Rémi DURAND
-// Last update Wed Mar 25 13:08:31 2015 Rémi DURAND
+// Last update Thu Mar 26 10:02:48 2015 Ambroise Coutarel
 //
 
 #include <unistd.h>
 #include "./include/leSnake.hpp"
-#include "nibbler.hpp"
+#include "./include/nibbler.hpp"
 #include "./include/IGfxParams.hpp"
 
 int		game_launch(const int width, const int height, void *handler)
