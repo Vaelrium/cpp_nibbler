@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 14:55:17 2015 Rémi DURAND
-// Last update Thu Mar 26 10:02:48 2015 Ambroise Coutarel
+// Last update Thu Mar 26 13:39:15 2015 Ambroise Coutarel
 //
 
 #include <unistd.h>
@@ -42,6 +42,7 @@ int		algo_snake(const int width, const int height, void *handler)
     }
   displayHandler = genitor3000(width * BLOCK_SIZE, height * BLOCK_SIZE);
   (void)displayHandler;
+  displayHandler->gameLoop();
   game_launch(width, height, handler);
   return (0);
 }

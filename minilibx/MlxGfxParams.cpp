@@ -5,7 +5,7 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:40:15 2015 Ambroise Coutarel
-// Last update Fri Mar 27 12:39:53 2015 Ambroise Coutarel
+// Last update Fri Mar 27 15:49:04 2015 Ambroise Coutarel
 //
 
 extern "C"
@@ -15,8 +15,7 @@ extern "C"
 #include "../include/nibbler.hpp"
 #include "MlxGfxParams.hpp"
 #include <cstdlib>
-
-
+#include <iostream>
 extern "C"
 {
   void	*mlx_init();
@@ -24,21 +23,21 @@ extern "C"
 
 MlxGfxParams::MlxGfxParams(int win_x, int win_y, leSnake *snek) : IGfxParams(win_x, win_y, snek)
 {
-  //this->data.win_x = win_x;
-  //this->data.win_y = win_y;
+  this->data.win_x = win_x;
+  this->data.win_y = win_y;
   this->data.mlx_ptr = mlx_init();
   this->data.win_ptr = mlx_new_window(this->data.mlx_ptr, win_x, win_y, "koujouSnake");
   this->data.img_ptr = mlx_new_image(this->data.mlx_ptr, win_x, win_y);
   this->data.img = mlx_get_data_addr(this->data.img_ptr, &(this->data.bpp),
 				&(this->data.sizeline), &(this->data.endian));
-  //this->data.snake = snek;
+  this->data.snake = snek;
 }
 
 MlxGfxParams::~MlxGfxParams()
 {
 }
 
-int	MlxGfxParams::drawSquare(int sq_x, int sq_y, dump *data)
+int	MlxGfxParams::drawSquare(int sq_x, int sq_y, dump *data, int color)
 {
   int x = 0, y = 0;
 
@@ -46,7 +45,7 @@ int	MlxGfxParams::drawSquare(int sq_x, int sq_y, dump *data)
     {
       while (x != BLOCK_SIZE)
   	{
-	  my_pixel_put_to_image((sq_x + x), (sq_y + y), data, GROUND);
+	  my_pixel_put_to_image((sq_x + x), (sq_y + y), data, color);
   	  ++x;
   	}
       ++y;
@@ -55,14 +54,27 @@ int	MlxGfxParams::drawSquare(int sq_x, int sq_y, dump *data)
   return (0);
 }
 
+#include <cstdio>
+
 int	MlxGfxParams::drawSnake(dump *data)
 {
+  drawSquare(50, 50, data, FOOD);
+  drawSquare(70, 50, data, FOOD);
+  printf("SNEKHEAD : x = %d, y = %d\n", data->snake->leFood.first, data->snake->leFood.second);
+  // std::cout << "DRAWING FüD\n" << std::endl;
+  // std::cout << "food x : " << data->snake->leFood.first << std::endl;
+  // drawSquare(data->snake->leFood.first * BLOCK_SIZE, data->snake->leFood.second * BLOCK_SIZE, data, FOOD);
+  // std::cout << "DRAWING SNEKHED\n" << std::endl;
+  // drawSquare(data->snake->getHx() * BLOCK_SIZE, data->snake->getHy() * BLOCK_SIZE, data, SNEKHEAD);
+  // for(bodyVector::const_iterator it = data->snake->body.begin(); it != data->snake->body.end(); ++it) {
+  //   drawSquare(it->first * BLOCK_SIZE, it->second * BLOCK_SIZE, data, SNEKBOD);
+  // }
   return 0;
 }
 
 int	MlxGfxParams::updateImg(dump *data)
 {
-  int	x = 0, y = 0, x_game = data->win_x / BLOCK_SIZE, y_game = data->win_y / BLOCK_SIZE;
+  int	x = 0, y = 0;
 
   while (y != data->win_y)
     {
@@ -74,6 +86,7 @@ int	MlxGfxParams::updateImg(dump *data)
       ++y;
       x = 0;
     }
+  drawSnake(data);
   return (0);
 }
 
@@ -110,6 +123,7 @@ int	MlxGfxParams::expose_redraw(void *data)
 
 int	MlxGfxParams::gameLoop()
 {
+  printf("SNEKHEAD : x = %d, y = %d\n", data.snake->leFood.first, data.snake->leFood.second);
   updateImg(&(this->data));
   mlx_put_image_to_window(this->data.mlx_ptr, this->data.win_ptr, this->data.img_ptr, 0, 0);
   mlx_key_hook(this->data.win_ptr, key_event, static_cast<void *>(&(this->data)));
@@ -123,7 +137,7 @@ int	MlxGfxParams::my_pixel_put_to_image(int x, int y, dump *data, int color)
 
   pix = ((x * (data->bpp / 8)) + (data->sizeline * y));
   data->img[pix] = color;
-  data->img[pix + 1] = color >> 2;
-  data->img[pix + 2] = color >> 4;
+  data->img[pix + 1] = color >> 8;
+  data->img[pix + 2] = color >> 16;
   return (0);
 }

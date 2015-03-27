@@ -1,0 +1,19 @@
+##
+## Makefile for  in /home/ganesha/projets/cpp_nibbler/sdl
+##
+## Made by Ambroise Coutarel
+## Login   <ganesha@epitech.net>
+##
+## Started on  Thu Mar 26 13:55:02 2015 Ambroise Coutarel
+## Last update Thu Mar 26 13:55:44 2015 Ambroise Coutarel
+##
+
+CC	= 	gcc
+
+NAME	= 	lib_nibbler_sdl.so
+
+TEST	=	mlx_snake_init.cpp		\
+		MlxGfxParams.cpp		\
+		mlx_key_events.cpp		\
+		mlx_pixel_put_to_image.cpp	\
+		../IGfxParams.cpp

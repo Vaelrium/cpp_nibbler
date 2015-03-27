@@ -5,7 +5,7 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:21:12 2015 Ambroise Coutarel
-// Last update Fri Mar 27 12:36:28 2015 Ambroise Coutarel
+// Last update Fri Mar 27 14:54:09 2015 Ambroise Coutarel
 //
 
 #ifndef MLXGFXPARAMS_H_
@@ -25,6 +25,8 @@
 # define LEFT_INC(x) (x == 3 ? 0 : (x + 1))
 # define RIGHT_DEC(x) (x == 0 ? 3 : (x - 1))
 
+typedef std::vector<std::pair<int, int> > bodyVector;
+
 
 class MlxGfxParams : public IGfxParams
 {
@@ -36,7 +38,7 @@ public:
   static int		key_event(int keycode, void *data);
   static int		updateImg(dump *data);
   static int		drawSnake(dump *data);
-  static int		drawSquare(int x, int y, dump *data);
+  static int		drawSquare(int x, int y, dump *data, int color);
   static int		my_pixel_put_to_image(int x, int y, dump *data, int color);
   int			gameLoop();
 };

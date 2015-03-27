@@ -5,7 +5,7 @@
 ## Login   <durand_u@epitech.net>
 ## 
 ## Started on  Mon Mar 23 10:46:23 2015 Rémi DURAND
-## Last update Tue Mar 24 13:58:23 2015 Rémi DURAND
+## Last update Fri Mar 27 15:38:15 2015 Ambroise Coutarel
 ##
 
 SRC		=	nibbler.cpp	\
@@ -27,10 +27,12 @@ MLX_LIB		=	lib_nibbler_mlx.so
 
 CXXFLAGS	+=	-W -Wall -Wextra -Werror -ldl
 
+DEBUG		+=	-g3
+
 all: $(NAME) mlx
 
 $(NAME): $(OBJ)
-	$(CC) -o $(NAME) $(OBJ) $(CXXFLAGS)
+	$(CC) -o $(NAME) $(OBJ) $(CXXFLAGS) $(DEBUG)
 
 mlx:
 	$(MAKE) -C $(MLX)
