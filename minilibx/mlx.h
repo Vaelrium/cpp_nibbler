@@ -5,7 +5,7 @@
 ** Login   <ol@epitech.net>
 ** 
 ** Started on  Mon Jul 31 16:37:50 2000 Charlie Root
-** Last update Fri Mar 27 10:32:10 2015 Ambroise Coutarel
+** Last update Mon Mar 30 14:00:22 2015 Ambroise Coutarel
 */
 
 /*
@@ -85,7 +85,7 @@ int	mlx_mouse_hook (void *win_ptr, int (*funct_ptr)(), void *param);
 int	mlx_key_hook (void *win_ptr, int (*funct_ptr)(int, void*), void *param);
 int	mlx_expose_hook (void *win_ptr, int (*funct_ptr)(void*), void *param);
 
-int	mlx_loop_hook (void *mlx_ptr, int (*funct_ptr)(), void *param);
+int	mlx_loop_hook (void *mlx_ptr, int (*funct_ptr)(void*), void *param);
 int	mlx_loop (void *mlx_ptr);
 
 

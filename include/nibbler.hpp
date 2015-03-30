@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 10:41:04 2015 Rémi DURAND
-// Last update Wed Mar 25 12:48:48 2015 Rémi DURAND
+// Last update Mon Mar 30 14:18:19 2015 Ambroise Coutarel
 //
 
 #ifndef _NIB_H_
@@ -16,7 +16,7 @@
 #include <string>
 #include <dlfcn.h>
 
-#define BLOCK_SIZE 10
+#define BLOCK_SIZE 20
 
 int		init_nib(const int width, const int height, std::string lib, void **handler);
 int		algo_snake(const int width, const int height, void *handler);

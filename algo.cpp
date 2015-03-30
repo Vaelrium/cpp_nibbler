@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 14:55:17 2015 Rémi DURAND
-// Last update Thu Mar 26 13:39:15 2015 Ambroise Coutarel
+// Last update Mon Mar 30 13:17:56 2015 Ambroise Coutarel
 //
 
 #include <unistd.h>
@@ -32,15 +32,16 @@ int		game_launch(const int width, const int height, void *handler)
 int		algo_snake(const int width, const int height, void *handler)
 {
   IGfxParams	*displayHandler;
-  IGfxParams	*(*genitor3000)(int, int);
+  IGfxParams	*(*genitor3000)(int, int, leSnake*);
+  leSnake	snake(width, height);
 
-  genitor3000 = reinterpret_cast<IGfxParams* (*)(int, int)>(dlsym(handler, "init_lib"));
+  genitor3000 = reinterpret_cast<IGfxParams* (*)(int, int, leSnake*)>(dlsym(handler, "init_lib"));
   if (genitor3000 == NULL)
     {
       std::cout << dlerror() << std::endl;
       return (-1);
     }
-  displayHandler = genitor3000(width * BLOCK_SIZE, height * BLOCK_SIZE);
+  displayHandler = genitor3000(width * BLOCK_SIZE, height * BLOCK_SIZE, &snake);
   (void)displayHandler;
   displayHandler->gameLoop();
   game_launch(width, height, handler);

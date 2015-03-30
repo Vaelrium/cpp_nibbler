@@ -5,7 +5,7 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:40:15 2015 Ambroise Coutarel
-// Last update Fri Mar 27 15:49:04 2015 Ambroise Coutarel
+// Last update Mon Mar 30 14:24:35 2015 Ambroise Coutarel
 //
 
 extern "C"
@@ -16,6 +16,8 @@ extern "C"
 #include "MlxGfxParams.hpp"
 #include <cstdlib>
 #include <iostream>
+#include <unistd.h>
+
 extern "C"
 {
   void	*mlx_init();
@@ -58,17 +60,11 @@ int	MlxGfxParams::drawSquare(int sq_x, int sq_y, dump *data, int color)
 
 int	MlxGfxParams::drawSnake(dump *data)
 {
-  drawSquare(50, 50, data, FOOD);
-  drawSquare(70, 50, data, FOOD);
-  printf("SNEKHEAD : x = %d, y = %d\n", data->snake->leFood.first, data->snake->leFood.second);
-  // std::cout << "DRAWING FüD\n" << std::endl;
-  // std::cout << "food x : " << data->snake->leFood.first << std::endl;
-  // drawSquare(data->snake->leFood.first * BLOCK_SIZE, data->snake->leFood.second * BLOCK_SIZE, data, FOOD);
-  // std::cout << "DRAWING SNEKHED\n" << std::endl;
-  // drawSquare(data->snake->getHx() * BLOCK_SIZE, data->snake->getHy() * BLOCK_SIZE, data, SNEKHEAD);
-  // for(bodyVector::const_iterator it = data->snake->body.begin(); it != data->snake->body.end(); ++it) {
-  //   drawSquare(it->first * BLOCK_SIZE, it->second * BLOCK_SIZE, data, SNEKBOD);
-  // }
+  drawSquare(data->snake->leFood.first * BLOCK_SIZE, data->snake->leFood.second * BLOCK_SIZE, data, FOOD);
+  drawSquare(data->snake->getHx() * BLOCK_SIZE, data->snake->getHy() * BLOCK_SIZE, data, SNEKHEAD);
+  for(bodyVector::const_iterator it = data->snake->body.begin(); it != data->snake->body.end(); ++it) {
+    drawSquare(it->first * BLOCK_SIZE, it->second * BLOCK_SIZE, data, SNEKBOD);
+  }
   return 0;
 }
 
@@ -92,10 +88,15 @@ int	MlxGfxParams::updateImg(dump *data)
 
 int	MlxGfxParams::move_snake(char dir, dump *data)
 {
-  if (dir)
+  if (dir == 1)
     data->snake->setDir(RIGHT_DEC(data->snake->getDir()));
-  else
+  else if (dir == 2)
     data->snake->setDir(LEFT_INC(data->snake->getDir()));
+  data->snake->move();
+  data->snake->deadCheck(data->win_x / BLOCK_SIZE , data->win_y / BLOCK_SIZE);
+  data->snake->foodCheck(data->win_x / BLOCK_SIZE , data->win_y / BLOCK_SIZE);
+  if (data->snake->getDead())
+    exit (0);
   updateImg(data);
   expose_redraw(data);
   return (0);
@@ -103,14 +104,25 @@ int	MlxGfxParams::move_snake(char dir, dump *data)
 
 int	MlxGfxParams::key_event(int keycode, void *data)
 {
-  //dump	*local_data = static_cast<dump*>(data);
-
+  std::cout << keycode << std::endl;
   if (keycode == ESCAPE)
     exit(0);
   else if (keycode == RIGHT)
     move_snake(1, static_cast<dump*>(data));
   else if (keycode == LEFT)
-    move_snake(0, static_cast<dump*>(data));
+    move_snake(2, static_cast<dump*>(data));
+  return (0);
+}
+
+int	dflt_move(void *data)
+{
+  std::cout << "FART !!!!" << std::endl;
+  dump	*local_data = static_cast<dump*>(data);
+  local_data->snake->move();
+  local_data->snake->deadCheck(local_data->win_x / BLOCK_SIZE , local_data->win_y / BLOCK_SIZE);
+  local_data->snake->foodCheck(local_data->win_x / BLOCK_SIZE , local_data->win_y / BLOCK_SIZE);
+  MlxGfxParams::updateImg(local_data);
+  mlx_put_image_to_window(local_data->mlx_ptr, local_data->win_ptr, local_data->img_ptr, 0, 0);
   return (0);
 }
 
@@ -123,9 +135,9 @@ int	MlxGfxParams::expose_redraw(void *data)
 
 int	MlxGfxParams::gameLoop()
 {
-  printf("SNEKHEAD : x = %d, y = %d\n", data.snake->leFood.first, data.snake->leFood.second);
   updateImg(&(this->data));
   mlx_put_image_to_window(this->data.mlx_ptr, this->data.win_ptr, this->data.img_ptr, 0, 0);
+  mlx_loop_hook(this->data.win_ptr, dflt_move, static_cast<void *>(&(this->data)));
   mlx_key_hook(this->data.win_ptr, key_event, static_cast<void *>(&(this->data)));
   mlx_expose_hook(this->data.win_ptr, expose_redraw, &(this->data));
   mlx_loop(this->data.mlx_ptr);
