@@ -5,7 +5,7 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 30 14:45:36 2015 Ambroise Coutarel
-// Last update Mon Mar 30 16:56:23 2015 Ambroise Coutarel
+// Last update Tue Mar 31 11:05:53 2015 Ambroise Coutarel
 //
 
 #ifndef SDLGFXPARAMS_H_
@@ -30,7 +30,7 @@ public:
   ~SdlGfxParams();
   int		gameLoop();
   int		sdlWait();
-  int		drawSnake(SDL_Surface *window);
+  static int		drawSnake(SDL_Surface *window, dump *data);
 };
 
 extern "C"

@@ -1,0 +1,1 @@
+cd ./sdl ; make re ; cd .. ; ./nibbler 30 30 lib_nibbler_sdl.so

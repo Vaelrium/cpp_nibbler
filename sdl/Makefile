@@ -5,7 +5,7 @@
 ## Login   <ganesha@epitech.net>
 ##
 ## Started on  Thu Mar 26 13:55:02 2015 Ambroise Coutarel
-## Last update Mon Mar 30 16:11:53 2015 Ambroise Coutarel
+## Last update Tue Mar 31 11:14:37 2015 Ambroise Coutarel
 ##
 
 CC	= 	gcc
@@ -14,7 +14,8 @@ NAME	= 	lib_nibbler_sdl.so
 
 
 SRC	=	SdlGfxParams.cpp	\
-		../IGfxParams.cpp
+		../IGfxParams.cpp	\
+		leSnake.cpp
 
 OBJ	= $(SRC:.cpp=.o)
 
