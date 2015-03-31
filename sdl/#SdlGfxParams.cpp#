@@ -30,10 +30,7 @@ int	SdlGfxParams::move_snake(char dir, SDL_Surface *window)
       data.snake->setDir(RIGHT_DEC(data.snake->getDir()));
     }
   else if (dir == 2)
-    {
-      std::cout << "moving left cappn" << std::endl;
-      data.snake->setDir(LEFT_INC(data.snake->getDir()));
-    }
+    data.snake->setDir(LEFT_INC(data.snake->getDir()));
   drawSnake(window);
   return (0);
 }
