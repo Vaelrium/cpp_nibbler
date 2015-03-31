@@ -5,7 +5,7 @@
 ## Login   <durand_u@epitech.net>
 ## 
 ## Started on  Mon Mar 23 10:46:23 2015 Rémi DURAND
-## Last update Fri Mar 27 15:38:15 2015 Ambroise Coutarel
+## Last update Tue Mar 31 10:31:59 2015 Ambroise Coutarel
 ##
 
 SRC		=	nibbler.cpp	\
@@ -23,13 +23,17 @@ NAME		=	nibbler
 
 MLX		=	./minilibx/
 
+SDL		=	./sdl/
+
 MLX_LIB		=	lib_nibbler_mlx.so
+
+SDL_LIB		=	lib_nibbler_sdl.so
 
 CXXFLAGS	+=	-W -Wall -Wextra -Werror -ldl
 
 DEBUG		+=	-g3
 
-all: $(NAME) mlx
+all: $(NAME) mlx sdl
 
 $(NAME): $(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(CXXFLAGS) $(DEBUG)
@@ -37,12 +41,17 @@ $(NAME): $(OBJ)
 mlx:
 	$(MAKE) -C $(MLX)
 
+sdl:
+	$(MAKE) -C $(SDL)
+
 clean:
 	$(RM) $(OBJ)
 	$(MAKE) clean -C $(MLX)
+	$(MAKE) clean -C $(SDL)
 
 fclean: clean
 	$(RM) $(NAME)
 	$(RM) $(MLX_LIB)
+	$(RM) $(SDL_LIB)
 
 re: fclean all

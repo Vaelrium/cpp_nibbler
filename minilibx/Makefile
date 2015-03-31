@@ -5,7 +5,7 @@
 ## Login   <jeff@epitech.net>
 ##
 ## Started on  Tue Oct  5 15:56:43 2228 Jeff Lavariable
-## Last update Fri Mar 27 14:27:51 2015 Ambroise Coutarel
+## Last update Mon Mar 30 15:19:29 2015 Ambroise Coutarel
 ##
 
 
@@ -15,7 +15,6 @@ NAME	= 	lib_nibbler_mlx.so
 
 SRC	=	mlx_snake_init.cpp		\
 		MlxGfxParams.cpp		\
-		mlx_key_events.cpp		\
 		../IGfxParams.cpp		\
 		leSnake.cpp
 

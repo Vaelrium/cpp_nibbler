@@ -5,7 +5,7 @@
 ## Login   <ganesha@epitech.net>
 ##
 ## Started on  Thu Mar 26 13:55:02 2015 Ambroise Coutarel
-## Last update Thu Mar 26 13:59:30 2015 Ambroise Coutarel
+## Last update Mon Mar 30 16:11:53 2015 Ambroise Coutarel
 ##
 
 CC	= 	gcc
@@ -13,20 +13,23 @@ CC	= 	gcc
 NAME	= 	lib_nibbler_sdl.so
 
 
-SRC	=
+SRC	=	SdlGfxParams.cpp	\
+		../IGfxParams.cpp
 
 OBJ	= $(SRC:.cpp=.o)
 
-CXXFLAGS= -I/usr/X11R6/include -O3 -fPIC -Wno-write-strings
+CXXFLAGS=  -O3 -fPIC -Wno-write-strings -I/usr/include/SDL -D_GNU_SOURCE=1 -lSDL
+
+all:		$(NAME)
 
 $(NAME):         $(OBJ)
-	 	$(CC) -rdynamic -shared -o $(NAME) $(OBJ)
+	 	$(CC) -rdynamic -I /usr/include/SDL -shared -o $(NAME) $(OBJ) -lSDL
 	 	cp $(NAME) ..
 
 clean	:
 	rm -f $(OBJ)
 
-fclean	:
+fclean	: clean
 	rm -f $(NAME)
 
 re: fclean all

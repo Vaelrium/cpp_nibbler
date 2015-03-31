@@ -5,7 +5,7 @@
 // Login   <ganesha@epitech.net>
 //
 // Started on  Mon Mar 23 15:21:12 2015 Ambroise Coutarel
-// Last update Mon Mar 30 14:13:04 2015 Ambroise Coutarel
+// Last update Mon Mar 30 16:56:06 2015 Ambroise Coutarel
 //
 
 #ifndef MLXGFXPARAMS_H_
