@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Tue Mar 24 13:56:25 2015 Rémi DURAND
-// Last update Tue Mar 31 14:46:32 2015 Rémi DURAND
+// Last update Tue Mar 31 14:47:00 2015 Rémi DURAND
 //
 
 #include "../include/leSnake.hpp"

@@ -5,29 +5,13 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Mon Mar 23 14:55:17 2015 Rémi DURAND
-// Last update Mon Mar 30 13:17:56 2015 Ambroise Coutarel
+// Last update Tue Mar 31 15:03:44 2015 Rémi DURAND
 //
 
 #include <unistd.h>
 #include "./include/leSnake.hpp"
 #include "./include/nibbler.hpp"
 #include "./include/IGfxParams.hpp"
-
-int		game_launch(const int width, const int height, void *handler)
-{
-  leSnake	snake(width, height);
-
-  while (snake.getDead() == false)
-    {
-      snake.move();
-      snake.deadCheck(width, height);
-      snake.foodCheck(width, height);
-      //affichage
-      usleep(500000);
-    }
-  (void)handler;
-  return (0);
-}
 
 int		algo_snake(const int width, const int height, void *handler)
 {
@@ -42,8 +26,10 @@ int		algo_snake(const int width, const int height, void *handler)
       return (-1);
     }
   displayHandler = genitor3000(width * BLOCK_SIZE, height * BLOCK_SIZE, &snake);
-  (void)displayHandler;
   displayHandler->gameLoop();
-  game_launch(width, height, handler);
+  if (snake.getDead() == true)
+    std::cout << "You're dead" << std::endl;
+  else
+    std::cout << "Leaving the game" << std::endl;
   return (0);
 }

@@ -5,7 +5,7 @@
 // Login   <durand_u@epitech.net>
 // 
 // Started on  Tue Mar 24 13:56:25 2015 Rémi DURAND
-// Last update Wed Mar 25 13:11:57 2015 Rémi DURAND
+// Last update Tue Mar 31 14:46:08 2015 Rémi DURAND
 //
 
 #include "./include/leSnake.hpp"
@@ -114,7 +114,8 @@ void		leSnake::deadCheck(int width, int height)
 {
   std::vector<std::pair<int, int> >::iterator	it;
 
-  if (this->hx == width || this->hy == height)
+  if (this->hx >= width || this->hy >= height ||
+      this->hx < 0 || this->hy < 0)
     {
       this->dead = true;
       return ;
