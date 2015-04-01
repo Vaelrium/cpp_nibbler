@@ -5,12 +5,12 @@
 ## Login   <durand_u@epitech.net>
 ## 
 ## Started on  Mon Mar 30 14:39:46 2015 Rémi DURAND
-## Last update Tue Mar 31 14:36:10 2015 Rémi DURAND
+## Last update Wed Apr  1 15:57:41 2015 Rémi DURAND
 ##
 
 CC      =       gcc
 
-NAME    =       lib_ncurses.so
+NAME    =       lib_nibbler_ncurses.so
 
 SRC     =       ncurses_snake_init.cpp	\
 		NcurGfxParams.cpp	\
